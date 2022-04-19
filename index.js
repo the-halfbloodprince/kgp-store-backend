@@ -2,7 +2,7 @@ const express = require('express')
 
 const app = express()
 
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 app.get('/', async (req, res) => {
 
